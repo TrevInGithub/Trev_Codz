@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="x-icon" href="Resources/logo4.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NEW TECH LOGIN</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body class="bg-info-subtle">
+
+    <header>
+
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" style="margin-left: 10px; font-size: 40px;">NEW TECH</a>
+
+
+                <!--schbr-->
+                <div class="col-6">
+                    <div class="col-xxl-12 mt-2" style="margin-left:30px;">
+                        <form class="navbar-form">
+                            <input type="text" class="form-control col-lg-8" placeholder="Search Your Item Here...">
+                        </form>
+                    </div>
+                </div>
+                <div class="col-xxl-2 mt-xxl-2" style="margin-left: 25px;">
+                    <button class="btn btn-primary"><i class='bx bx-search' style="font-size: 20px;">
+                            Search</i></button>
+                </div>
+
+                <a href="login.html" class="btn btn-outline-success mt-0">Login</a>
+                <a href="register.html" class="btn btn-outline-light mt-0">Register</a>
+                <a href="cartAndWatchlist.html" class="btn btn-outline-light mt-0"><i class='bx bx-cart'
+                        style="font-size: 13px; font-weight: bold;">Cart</i></a>
+
+
+                <!--sdpnel-->
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">NEW TECH ELECTRONICS</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="open"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="login.html">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="register.html">Register</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="orders.html">My Orders</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="adminSignin.html">Admin Signin</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="adminPanel.html">Admin Panel</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="true">
+                                    Catergories
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="vgc.html">Video Game consoles</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#" onclick="catergorysw();">Smart watches</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#" onclick="catergoryhp();">Headphones</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#" onclick="catergorygp();">Gamepads</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#" onclick="catergorycd();">Camera drones</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-success" type="submit">Search</button>
+                        </form><br>
+
+
+                        <!--acrdns-->
+
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        Admin Panel
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Visit the <a href="adminPanel.html">Admin panel</a> to
+                                        create you listing and manage your products... No admin account yet?
+                                        <a href="adminSignin.html">Create your Admin Account</a> here
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                        aria-controls="flush-collapseThree">
+                                        Contact User Support
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Contact our agents.
+                                        Send us a mail regarding your problem to <a
+                                            href="#">newtechelectronics@gmail.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="row vh-100 g-0 bg-body-secondary">
+        <!--lftsd-->
+        <div class="col-lg-6 position-relative d-none d-lg-block">
+            <div class="bgImg" style="background-image:url(Resources/logo3.jpg) ;"></div>
+        </div>
+        <!--/ lftsd-->
+
+        <!--rgtsd-->
+
+        <div class="col-lg-6">
+            <div class="row align-items-center justify-content-center h-100 g-0 px-0 px-sm-0">
+                <div class="col col-sm-6 col-lg-7 col-xl-6">
+
+                    <!--logo-->
+                    <a href="index.html" class="d-flex justify-content-center mb- ">
+                        <img src="Resources/logo4.jpg" style="height: 75px;">
+                    </a>
+
+                    <!--/ logo-->
+
+                    <div class="text-center mb-5">
+                        <h3 class="fw-bold">Log In</h3>
+                        <p class="text-secondary">Login to your account here</p>
+                    </div>
+
+                    <!--lgin-->
+                    <button class="btn btn-outline-secondary w-100 mb-3">
+                        <i class='bx bxl-google text-danger me-1 fs-6 ' style="font-weight: bold;"></i>
+                        Continue with Google
+                    </button>
+                    <button class="btn btn-outline-secondary w-100">
+                        <i class='bx bxl-facebook-circle text-primary me-1 fs-6' style="font-weight: 900;"></i>
+                        Login with Facebook
+                    </button>
+                    <!--/ lgin-->
+
+                    <!--dvdr-->
+                    <div class="position-relative">
+                        <hr class="text-secondary dvdr">
+                        <div class="dcc">OR</div>
+                    </div>
+                    <!--/ dvdr-->
+
+                    <!--lginfrm-->
+                    <form action="#">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">
+                                <i class='bx bxs-user'></i>
+                            </span>
+                            <input type="text" class="form-control form-control-lg fs-6" placeholder="Username">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">
+                                <i class='bx bxs-lock'></i>
+                            </span>
+                            <input type="text" class="form-control form-control-lg fs-6" placeholder="Password">
+                        </div>
+                        <div class="input-group mb-3 d-flex justify-content-between">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="formCheck">
+                                <label for="formCheck" class="form-check-label text-secondary"><small>Remember
+                                        me</small></label>
+                            </div>
+                            <div>
+                                <small><a href="#">Forgot Password?</a></small>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-lg w-100">LOGIN</button>
+                    </form>
+                    <!--/ lginfrm-->
+
+                    <div class="text-center">
+                        <small>Don't have an account? <a href="register.html" class="fw-bold">Sign Up</a></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container-fluid">
+          <div class="row text-body-secondary">
+            <div class="col-6 text-start">
+              <a href="#" class="text-body-secondary">
+                <strong>Trevon</strong>
+              </a>
+            </div>
+            <div class="col-6 text-end text-body-secondary d-none d-md-block">
+              <ul class="list-inline mb-0">
+                <li class="list-inline-item">
+                  <a href="#" class="text-body-secondary">Contact</a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-body-secondary">About Us</a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-body-secondary">Terms
+                    & conditions</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
